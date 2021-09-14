@@ -31,9 +31,9 @@ Now the binary could be viewed as a combination of modules as shown in central o
 In the second phase, ModX performs the TPL detection by matching program modules with TPL modules.
 The TPL modules are generated in the same way as the first phrase and stored in a database.
 The matching is equivalent to searching the presence of partial functionality of a library once in a time, because every module contains an individual functionality of the program.
-In module matching procedure, the matching scores come from similarities between every available feature of different modules, e.g topology features, syntactic features, intra-function features. 
+In module matching procedure, the matching scores ($\alpha$, $\beta$ and $\gamma$) come from similarities between every available feature of different modules, e.g topology features, syntactic features, intra-function features. 
 The matching would result in many potential matches, thus a quick ranking and sorting method is needed for filtering. 
-The final output of the \tool is a list of libraries, with one-to-one modules matching results as the proof.
+The final output of the ModX is a list of libraries, with one-to-one modules matching results as the proof.
 Each matching result indicates the presence of partial functionality of a library, because every module corresponds to an individual functionality of the program.
 After the matching, it also introduces module and library importance scores to help improve the library detection accuracy.
 
@@ -47,7 +47,7 @@ After the matching, it also introduces module and library importance scores to h
  prefix "bat" stands for the tool "BAT", 
  prefix "oss" stands for the tool "OssPolice",
  prefix "bcd" stands for the method "BCD",
- prefix "abcd" or not prefix stand for our tool.
+ prefix "abcd" or not prefix stand for our tool ModX.
 
 4. The "*_grouper.pkl" files have the modularization results, which are stored as "Grouper" like classes.
 The definition and usage of the classes can be found in the directory "/utility_scripts".
