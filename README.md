@@ -18,6 +18,7 @@ Experimental results show that ModX outperforms other modularization tools by di
 ![Workflow](./figures/workflow.png)
 <center>Workflow</center>
 
+
 This Figure shows the workflow of ModX. It consists of two phases, namely Binary Modularization and TPL Detection, to predict TPLs from a binary program. 
 
 There are two phases to detect TPLs from a binary program.
@@ -30,7 +31,7 @@ Now the binary could be viewed as a combination of modules as shown in central o
 In the second phase, ModX performs the TPL detection by matching program modules with TPL modules.
 The TPL modules are generated in the same way as the first phrase and stored in a database.
 The matching is equivalent to searching the presence of partial functionality of a library once in a time, because every module contains an individual functionality of the program.
-In module matching procedure, the matching scores ($\alpha$, $\beta$ and $\gamma$) come from similarities between every available feature of different modules, e.g topology features, syntactic features, intra-function features. 
+In module matching procedure, the matching scores (α, β and γ) come from similarities between every available feature of different modules, e.g topology features, syntactic features, intra-function features. 
 The matching would result in many potential matches, thus a quick ranking and sorting method is needed for filtering. 
 The final output of the ModX is a list of libraries, with one-to-one modules matching results as the proof.
 Each matching result indicates the presence of partial functionality of a library, because every module corresponds to an individual functionality of the program.
