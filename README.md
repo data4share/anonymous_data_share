@@ -13,11 +13,10 @@ To detect both fully and partially imported TPLs at the semantic level, we propo
 By extracting both syntactic and semantic features, it measures the distance between modules to detect similar library module reuse in the program. 
 Experimental results show that ModX outperforms other modularization tools by distinguishing more coherent program modules with 353% higher module quality scores and beats other TPL detection tools with on average 17% better in precision and 8% better in recall.
 
-## Workflow
+## Overall Workflow
 
 ![Workflow](./figures/workflow.png)
 <center>Workflow</center>
-
 
 This Figure shows the workflow of ModX. It consists of two phases, namely Binary Modularization and TPL Detection, to predict TPLs from a binary program. 
 
@@ -36,6 +35,10 @@ The matching would result in many potential matches, thus a quick ranking and so
 The final output of the ModX is a list of libraries, with one-to-one modules matching results as the proof.
 Each matching result indicates the presence of partial functionality of a library, because every module corresponds to an individual functionality of the program.
 After the matching, it also introduces module and library importance scores to help improve the library detection accuracy.
+
+## Workflow of Detection
+![Workflow](./figures/workflow_of_detection.png)
+<center>Workflow of Detection</center>
 
 ## Modularization Example: Program "BASH"
 
